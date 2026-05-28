@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Rose Gold Birthday Cake",
+    "category": "Birthday",
+    "price": 1500,
+    "flavour": "Vanilla sponge with rose buttercream",
+    "desc": "A dreamy rose gold birthday cake with floral fondant accents and gold leaf decoration. Perfect for milestone birthdays.",
+    "badge": "Bestseller",
+    "img": "./images/img1.jpeg",
+    "emoji": "fas fa-cake-candles",
+    "date": 1716600000000
+  },
+  {
+    "id": 2,
+    "name": "Rainbow Theme Cake",
+    "category": "Theme",
+    "price": 1800,
+    "flavour": "Chocolate with rainbow layers",
+    "desc": "Colourful rainbow-layered cake with white cloud frosting. Loved by kids and adults alike!",
+    "badge": "Popular",
+    "img": "./images/img2.jpeg",
+    "emoji": "fas fa-rainbow",
+    "date": 1716686400000
+  },
+  {
+    "id": 3,
+    "name": "White Elegance Wedding Tier",
+    "category": "Wedding",
+    "price": 5500,
+    "flavour": "Almond & vanilla sponge",
+    "desc": "A classic 3-tier white wedding cake with delicate sugar flowers and pearl detailing. Timeless and elegant.",
+    "badge": "",
+    "img": "./images/img3.jpeg",
+    "emoji": "fas fa-ring",
+    "date": 1716772800000
+  },
+  {
+    "id": 4,
+    "name": "Photo Print Cake",
+    "category": "Photo",
+    "price": 900,
+    "flavour": "Butterscotch sponge",
+    "desc": "Personalised edible photo print cake — send us any photo and we'll bake your memory onto a cake!",
+    "badge": "Custom",
+    "img": "./images/img4.jpeg",
+    "emoji": "fas fa-camera",
+    "date": 1716859200000
+  },
+  {
+    "id": 5,
+    "name": "Floral Fondant Cake",
+    "category": "Fondant",
+    "price": 2200,
+    "flavour": "Red velvet with cream cheese",
+    "desc": "Hand-sculpted fondant roses in soft pinks and whites. Ideal for birthdays, anniversaries and bridal showers.",
+    "badge": "New",
+    "img": "./images/img5.jpeg",
+    "emoji": "fas fa-flower",
+    "date": 1716945600000
+  },
+  {
+    "id": 6,
+    "name": "Mini Cupcake Box (12)",
+    "category": "Cupcakes",
+    "price": 650,
+    "flavour": "Assorted — chocolate, vanilla, strawberry",
+    "desc": "Box of 12 beautifully frosted mini cupcakes, perfect for parties, gifting, and office celebrations.",
+    "badge": "",
+    "img": "./images/img1.jpeg",
+    "emoji": "fas fa-cupcake",
+    "date": 1717032000000
+  }
+]
