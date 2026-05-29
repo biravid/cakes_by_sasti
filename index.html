@@ -2236,17 +2236,17 @@
         <div class="form-row">
           <div class="form-group">
             <label>Your Name</label>
-            <input type="text" placeholder="e.g. Priya Kumar">
+            <input type="text" id="orderName" name="orderName" placeholder="e.g. Priya Kumar">
           </div>
           <div class="form-group">
             <label>Phone Number</label>
-            <input type="tel" placeholder="+91 XXXXX XXXXX">
+            <input type="tel" id="orderPhone" name="orderPhone" placeholder="+91 XXXXX XXXXX">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label>Cake Type</label>
-            <select>
+            <select id="orderCakeType" name="orderCakeType">
               <option value="">Select type…</option>
               <option>Birthday Cake</option>
               <option>Wedding Cake</option>
@@ -2259,12 +2259,12 @@
           </div>
           <div class="form-group">
             <label>Occasion Date</label>
-            <input type="date">
+            <input type="date" id="orderDate" name="orderDate">
           </div>
         </div>
         <div class="form-group">
           <label>Your Message / Design Ideas</label>
-          <textarea
+          <textarea id="orderMessage" name="orderMessage"
             placeholder="Tell us about the design, colour, flavour, size, or any special requirements…"></textarea>
         </div>
         <button class="form-submit" onclick="handleSubmit()"><i class="fas fa-cake-candles"></i> Send Order
