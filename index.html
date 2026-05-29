@@ -2322,10 +2322,49 @@
 
     // Form submit
     function handleSubmit() {
+      // Collect form data using IDs
+      const nameInput = document.getElementById('orderName');
+      const phoneInput = document.getElementById('orderPhone');
+      const cakeTypeSelect = document.getElementById('orderCakeType');
+      const dateInput = document.getElementById('orderDate');
+      const messageTextarea = document.getElementById('orderMessage');
+      
+      const name = nameInput?.value.trim() || '';
+      const phone = phoneInput?.value.trim() || '';
+      const cakeType = cakeTypeSelect?.value || '';
+      const date = dateInput?.value || '';
+      const message = messageTextarea?.value.trim() || '';
+      
+      // Validate required fields
+      if (!name || !phone || !cakeType || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      
+      // Format message for WhatsApp
+      const waMessage = `Hi Sasti! 🎂\n\nI'd like to place an order:\n\n📝 Name: ${name}\n📱 Phone: ${phone}\n🎨 Cake Type: ${cakeType}\n📅 Occasion Date: ${date || 'Not specified'}\n💭 Details: ${message}`;
+      
+      // Send via WhatsApp
+      const whatsappUrl = `https://wa.me/919342178702?text=${encodeURIComponent(waMessage)}`;
+      window.open(whatsappUrl, '_blank');
+      
+      // Update button
       const btn = document.querySelector('.form-submit');
-      btn.innerHTML = '<i class="fas fa-check-circle"></i> Request Sent! We\'ll contact you soon.';
+      btn.innerHTML = '<i class="fas fa-check-circle"></i> Request Sent! Check your WhatsApp.';
       btn.style.background = '#4caf82';
       btn.disabled = true;
+      
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        nameInput.value = '';
+        phoneInput.value = '';
+        cakeTypeSelect.value = '';
+        dateInput.value = '';
+        messageTextarea.value = '';
+        btn.innerHTML = '<i class="fas fa-cake-candles"></i> Send Order Request';
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
     }
   </script>
 
